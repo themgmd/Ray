@@ -1,4 +1,4 @@
-module ray
+module github.com/themgmd/ray
 
 go 1.22.0
 
