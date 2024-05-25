@@ -1,0 +1,27 @@
+package dhttp
+
+import (
+    "github.com/go-chi/chi/v5"
+)
+
+type {{.ServiceName}}Service interface {
+}
+
+type {{.Name}} struct {
+    {{.ServiceName}} {{.ServiceName}}Service
+}
+
+func New{{.Name}}({{.ServiceName}} {{.ServiceName}}Service) *{{.Name}} {
+	return &{{.Name}}{
+	    {{.ServiceName}}: {{.ServiceName}},
+	}
+}
+
+func ({{.Prefix}} *{{.Name}}) SetupRoutes(router chi.Router) {
+    router.Post("/{{.ServiceName}}", nil)
+    router.Patch("/{{.ServiceName}}/{id}", nil)
+    router.Delete("/{{.ServiceName}}/{id}", nil)
+
+   router.Get("/{{.ServiceName}}/", nil)
+   router.Get("/{{.ServiceName}}/{id}", nil)
+}

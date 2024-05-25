@@ -1,0 +1,13 @@
+package repo
+
+import (
+    "{{.PackageName}}/pkg/postgre"
+)
+
+type {{.Name}} struct {
+	db *postgre.DB
+}
+
+func New{{.Name}}(db *postgre.DB) *{{.Name}} {
+	return &{{.Name}}{db: db}
+}

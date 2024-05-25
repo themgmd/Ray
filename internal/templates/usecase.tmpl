@@ -1,0 +1,14 @@
+package {{.ServiceName}}
+
+type Repo interface {
+}
+
+type {{.Name}} struct {
+	repo Repo
+}
+
+func New(repo Repo) *{{.Name}} {
+	return &{{.Name}}{
+		repo: repo,
+	}
+}

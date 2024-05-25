@@ -1,0 +1,11 @@
+.bin
+.idea
+.vscode
+
+.env
+*.toml
+**/*.toml
+*.yaml
+*.yml
+**/*.yaml
+**/*.yml
