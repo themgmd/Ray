@@ -5,8 +5,8 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
+	"github.com/themgmd/ray/internal/config"
 	"log"
-	"ray/internal/config"
 )
 
 func init() {

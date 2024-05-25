@@ -1,9 +1,9 @@
 package generator
 
 import (
+	"github.com/themgmd/ray/internal/config"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
-	"ray/internal/config"
 	"strings"
 )
 
