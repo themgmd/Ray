@@ -1,6 +1,3 @@
-/*
-Copyright © 2024 Muhammad Gasanov <therealmgmd@gmail.com>
-*/
 package cmd
 
 import (
@@ -17,8 +14,8 @@ func init() {
 // configCmd represents the config command
 var configCmd = &cobra.Command{
 	Use:   "config",
-	Short: "Configurate your CLI app",
-	Long:  ``,
+	Short: "A config command configure your CLI app",
+	Long:  `A config command represents configuration for your CLI app`,
 	Run: func(cmd *cobra.Command, args []string) {
 		flag := cmd.Flag("package-name")
 		err := config.SetPackage(flag.Value.String())

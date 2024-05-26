@@ -1,6 +1,3 @@
-/*
-Copyright © 2024 Muhammad Gasanov <therealmgmd@gmail.com>
-*/
 package cmd
 
 import (
@@ -9,24 +6,21 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(createCmd)
+	rootCmd.AddCommand(addCmd)
 }
 
-// createCmd represents the generate command
-var createCmd = &cobra.Command{
-	Use:     "create",
-	Aliases: []string{"c"},
-	Short:   "Create is command for creating modules or app",
-	Long: `Create is command for creating modules or app. For example:
+// addCmd represents the generate command
+var addCmd = &cobra.Command{
+	Use:   "add",
+	Short: "An add is command for creating module",
+	Long: `Create is command for creating module or app. For example:
 
-- ray create app
-- ray create module User
+- ray add module User
 	`,
 	PreRun: preRun,
 	Run: func(cmd *cobra.Command, args []string) {
 		log.Println(`specify command with module or app subcommand. For example:
-- ray create app
-- ray create module User
+- ray add module User
 		`)
 	},
 }

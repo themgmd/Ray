@@ -41,7 +41,7 @@ func update() error {
 }
 
 func Init() error {
-	file, err := os.Open("config.toml")
+	file, err := os.Create("config.toml")
 	if err != nil {
 		return err
 	}

@@ -1,7 +1,3 @@
-/*
-Copyright © 2024 Muhammad Gasanov <therealmgmd@gmail.com>
-*/
-
 package cmd
 
 import (

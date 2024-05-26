@@ -1,6 +1,3 @@
-/*
-Copyright © 2024 Muhammad Gasanov <therealmgmd@gmail.com>
-*/
 package cmd
 
 import (
@@ -10,7 +7,7 @@ import (
 )
 
 func init() {
-	createCmd.AddCommand(moduleCmd)
+	addCmd.AddCommand(moduleCmd)
 }
 
 // moduleCmd represents the module command
